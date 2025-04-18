@@ -53,7 +53,7 @@ const weeklyTasks = {
     { time: '23:45', message: 'Fazer o simulado' },
   ],
     5: [ // Sexta-feira
-        { time: '00:05', message: 'Trabalhar' },
+        { time: '00:10', message: 'Trabalhar' },
         { time: '11:00', message: 'Almoçar' },
         { time: '12:00', message: 'Dormir' },
         { time: '16:20', message: 'Praticar inglês com o ChatGPT' },
