@@ -122,3 +122,8 @@ function getWeekdayName(day) {
   const dias = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
   return dias[parseInt(day)];
 }
+
+// Mantém o processo vivo no Railway
+setInterval(() => {
+  console.log("⏳ Bot de tarefas rodando...");
+}, 60000); // a cada 60 segundos
