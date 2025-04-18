@@ -87,34 +87,34 @@ Object.entries(weeklyTasks).forEach(([dayOfWeek, tasks]) => {
 
 // Função para enviar e-mail
 function sendEmail(task) {
-    const [timeLabel, ...msgParts] = task.split(' ');
-    const messageText = msgParts.join(' ');
-    
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_TO,
-      subject: `⏰ Lembrete da sua tarefa às ${timeLabel}`,
-      text: `
-  Olá, Victor! 👋
-  
-  Este é um lembrete da sua tarefa programada para hoje:
-  
-  🕒 Horário: ${timeLabel}  
-  📌 Tarefa: ${messageText}
-  
-  Lembre-se: pequenas ações criam grandes hábitos.  
-  Você está no caminho certo! 🚀
-  
-  Boa sorte com sua rotina!  
-  — Seu assistente de produtividade
-      `.trim()
-    };
-  
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) return console.error(error);
-      console.log('✅ Email enviado:', info.response);
-    });
-  }
+  const [timeLabel, ...msgParts] = task.split(' ');
+  const messageText = msgParts.join(' ');
+
+  const mailOptions = {
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_TO,
+    subject: `📌 Lembrete: ${messageText} às ${timeLabel}`,
+    text: `
+Olá, Victor! 👋
+
+🔔 Você tem uma tarefa agendada:
+
+🕒 Horário: ${timeLabel}  
+📌 Tarefa: ${messageText}
+
+Continue firme, você está construindo uma rotina de sucesso! 🚀
+
+Conte comigo!  
+— Seu assistente de produtividade
+    `.trim()
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) return console.error(error);
+    console.log('✅ Email enviado:', info.response);
+  });
+  console.log(`📨 Enviando e-mail com a tarefa: ${messageText}`);
+}
   
 
 // Traduz número do dia para nome
