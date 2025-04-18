@@ -32,7 +32,7 @@ const weeklyTasks = {
     { time: '16:20', message: 'Praticar inglês com o ChatGPT' },
     { time: '17:00', message: 'HackerRank' },
     { time: '21:00', message: 'Estudar Matematica' },
-    { time: '22:00', message: 'Fazer o simulado' },
+    { time: '23:00', message: 'Fazer o simulado' },
   ],
   3: [ // Quarta-feira
     { time: '07:30', message: 'Trabalhar' },
@@ -41,7 +41,7 @@ const weeklyTasks = {
     { time: '16:20', message: 'Praticar inglês com o ChatGPT' },
     { time: '17:00', message: 'HackerRank' },
     { time: '21:00', message: 'Estudar Matematica' },
-    { time: '22:00', message: 'Fazer o simulado' },
+    { time: '23:00', message: 'Fazer o simulado' },
   ],
   4: [ // Quinta-feira
     { time: '07:30', message: 'Trabalhar' },
@@ -50,7 +50,7 @@ const weeklyTasks = {
     { time: '16:20', message: 'Praticar inglês com o ChatGPT' },
     { time: '17:00', message: 'HackerRank' },
     { time: '21:00', message: 'Estudar Matematica' },
-    { time: '22:00', message: 'Fazer o simulado' },
+    { time: '23:10', message: 'Fazer o simulado' },
   ],
     5: [ // Sexta-feira
         { time: '07:30', message: 'Trabalhar' },
@@ -59,7 +59,7 @@ const weeklyTasks = {
         { time: '16:20', message: 'Praticar inglês com o ChatGPT' },
         { time: '17:00', message: 'HackerRank' },
         { time: '21:00', message: 'Estudar Matematica' },
-        { time: '22:00', message: 'Fazer o simulado' },
+        { time: '23:00', message: 'Fazer o simulado' },
     ],
     6: [ // Sábado
     { time: '08:00', message: 'Estudar programação' },
