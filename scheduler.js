@@ -109,11 +109,17 @@ Conte comigo!
     `.trim()
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) return console.error(error);
-    console.log('✅ Email enviado:', info.response);
-  });
-  console.log(`📨 Enviando e-mail com a tarefa: ${messageText}`);
+  console.log("🎯 Preparando e-mail para envio...");
+console.log("📩 Destinatário:", mailOptions.to);
+console.log("📨 Conteúdo:", mailOptions.text);
+
+transporter.sendMail(mailOptions, (error, info) => {
+  if (error) {
+    console.error("❌ Falha ao enviar e-mail:", error);
+  } else {
+    console.log("✅ Email enviado com sucesso:", info.response);
+  }
+});
 }
   
 
